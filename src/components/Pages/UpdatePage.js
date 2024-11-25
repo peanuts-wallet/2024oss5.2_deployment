@@ -5,7 +5,7 @@ const UpdatePage = () => {
   const { id } = useParams(); // URL에서 ID 추출
   const navigate = useNavigate();
 
-  // 상태 관리
+
   const [formData, setFormData] = useState({
     name: "",
     username: "",

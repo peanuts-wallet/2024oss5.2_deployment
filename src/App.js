@@ -14,7 +14,7 @@ const App = () => {
         <Route path="/update" element={<UpdatePage isBasePage={true} />} />
         <Route path="/update/:id" element={<UpdatePage />} />
       </Routes>
-    </Router>
+    </Router> 
   );
 };
 

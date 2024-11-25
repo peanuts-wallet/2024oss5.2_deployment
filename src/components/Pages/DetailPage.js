@@ -8,7 +8,7 @@ const DetailPage = ({ isBasePage = false }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (isBasePage || !id) {
+    if (isBasePage || !id) { 
       setLoading(false); 
       return;
     }
