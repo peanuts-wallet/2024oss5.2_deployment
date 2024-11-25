@@ -32,7 +32,6 @@ const ShowList = () => {
     fetchStudents();
   }, []);
 
-  // form data changing
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -60,7 +59,6 @@ const ShowList = () => {
     setModalVisible(false);
   };
 
-  // 학생 추가 또는 수정
   const saveData = async () => {
     try {
       const url = editingId
@@ -105,7 +103,6 @@ const ShowList = () => {
     setModalVisible(true);
   };
 
-  // 학생 삭제
   const deleteData = async (id) => {
     try {
       const response = await fetch(`https://672f3fc9229a881691f25065.mockapi.io/users/${id}`, {
